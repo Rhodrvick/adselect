@@ -1,0 +1,13 @@
+{
+  "name": "AdSelect Automation Engine",
+  "description": "Automated account registration system with randomized human typing cadence, proxy routing, and real-time dashboard tracking.",
+  "repository": "https://github.com/xhclintohn/ADselect-Screp",
+  "keywords": ["node", "automation", "dashboard", "express"],
+  "stack": "heroku-26",
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
