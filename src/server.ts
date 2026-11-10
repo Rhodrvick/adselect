@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express';
+6import express, { Request, Response } from 'express';
 import { startAutomationLoop, stopAutomationLoop, getEngineStatus } from './botEngine';
 
 process.on('uncaughtException', (err) => {
@@ -226,7 +226,7 @@ app.get('/api/status', (req: Request, res: Response) => {
 });
 
 app.post('/api/start', (req: Request, res: Response) => {
-    const { sponsor = 'xhclinton', count = 0 } = req.body;
+    const { sponsor = 'rhodvick', count = 0 } = req.body;
     startAutomationLoop(sponsor, Number(count)).catch(() => {});
     res.json({ success: true });
 });
